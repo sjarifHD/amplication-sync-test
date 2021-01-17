@@ -204,7 +204,7 @@ export class TaskResolver {
     action: "read",
     possession: "any",
   })
-  async tasks(
+  async tasksDependent(
     @graphql.Parent() parent: Task,
     @graphql.Args() args: FindManyTaskArgs,
     @gqlUserRoles.UserRoles() userRoles: string[]
